@@ -32,6 +32,7 @@ http://localhost:3000
 ```
 
 Vite provides:
+
 - ⚡ Lightning fast HMR (Hot Module Replacement)
 - 🔥 Instant server start
 - 📦 Optimized builds
@@ -55,7 +56,7 @@ yarn dev
 │   │   ├── quickSort.ts     # Quick Sort implementation
 │   │   └── index.ts         # Algorithms barrel export
 │   ├── utils/               # Utility functions
-│   │   ├── helpers.ts       # Helper functions (swap, generateNumbers)
+│   │   ├── utils.ts         # Utility functions (swap, generateNumbers)
 │   │   └── index.ts         # Utils barrel export
 │   └── script.ts            # Main application script
 ├── dist/                    # Compiled JavaScript
@@ -103,6 +104,7 @@ yarn dev
 ```
 
 This will:
+
 - Start Vite development server on port 3000
 - Enable hot module replacement (instant updates)
 - Open the app in your browser
