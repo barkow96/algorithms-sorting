@@ -1,48 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Bartosz Kowal">
-        <link href="./styles.css" rel="stylesheet">
-        <title>Sorting algorithms</title>
-    </head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Bartosz Kowal" />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Sorting algorithms</title>
+  </head>
 
-    <body>
-        <h1>SORTING ALGORITHMS COMPARISON</h1>
-        <div class="container">
-            <label>Write list of numbers to be sorted using space as separator (e.g.: 7 5 6 -1 3 5 1 9 -25):</label>
-            <div class="separate-block">
-                <input type="text" name="inputList" id="inputList" class="list">
-            </div>
-            <div class="separate-block">
-                <input type="number" id="minValue" class="input" placeholder="min. value" inputmode="numeric">
-                <input type="number" id="maxValue" class="input" placeholder="max. value" inputmode="numeric">
-                <input type="number" id="quantity" min="1" class="input" placeholder="number of elements">
-            </div>
-            
-            <div class="separate-block">
-                <label>Choose sorting method:</label>
-                <select name="methods" id="methods">
-                    <option value="bubble">Bubble Sort</option>
-                    <option value="selection">Selection Sort</option>
-                    <option value="quick">Quick Sort</option>
-                </select>
-            </div>
+  <body>
+    <h1>SORTING ALGORITHMS COMPARISON</h1>
+    <div class="container">
+      <label
+        >Write list of numbers to be sorted using space as separator (e.g.: 7 5
+        6 -1 3 5 1 9 -25):</label
+      >
+      <div class="separate-block">
+        <input type="text" name="inputList" id="inputList" class="list" />
+      </div>
+      <div class="separate-block">
+        <input
+          type="number"
+          id="minValue"
+          class="input"
+          placeholder="min. value"
+          inputmode="numeric"
+        />
+        <input
+          type="number"
+          id="maxValue"
+          class="input"
+          placeholder="max. value"
+          inputmode="numeric"
+        />
+        <input
+          type="number"
+          id="quantity"
+          min="1"
+          class="input"
+          placeholder="number of elements"
+        />
+      </div>
 
-            <div class="separate-block">
-                <button class="btn" id="generateBtn">GENERATE RANDOM LIST</button>
-                <button class="btn" id="sortBtn">SORT</button>
-            </div>
-        </div>
-        <div class="result">
-            <h3>RESULTS</h3>
-            <p>Sorted list:</p>
-            <span id="sortedList"></span>
-            <p>Time needed:</p>
-            <span id="timeNeeded"></span> ms
-        </div>
+      <div class="separate-block">
+        <label>Choose sorting method:</label>
+        <select name="methods" id="methods">
+          <option value="bubble">Bubble Sort</option>
+          <option value="selection">Selection Sort</option>
+          <option value="quick">Quick Sort</option>
+        </select>
+      </div>
 
-        <script src="./script.js"></script>
-    </body>
+      <div class="separate-block">
+        <button class="btn" id="generateBtn">GENERATE RANDOM LIST</button>
+        <button class="btn" id="sortBtn">SORT</button>
+      </div>
+    </div>
+    <div class="result">
+      <h3>RESULTS</h3>
+      <p>Sorted list:</p>
+      <span id="sortedList"></span>
+      <p>Time needed:</p>
+      <span id="timeNeeded"></span> ms
+    </div>
+
+    <script src="./dist/script.js"></script>
+  </body>
 </html>
