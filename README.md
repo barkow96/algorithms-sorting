@@ -17,26 +17,12 @@ yarn install
 
 ## Development
 
-### Build TypeScript
-
-Compile the TypeScript project to JavaScript:
-
-```bash
-yarn build
-```
-
-Or in watch mode (automatic compilation on changes):
-
-```bash
-yarn watch
-```
-
 ### Run the Application
 
 Start the development server on **port 3000**:
 
 ```bash
-yarn start
+yarn dev
 ```
 
 The application will automatically open in your browser at:
@@ -44,6 +30,11 @@ The application will automatically open in your browser at:
 ```
 http://localhost:3000
 ```
+
+Vite provides:
+- ⚡ Lightning fast HMR (Hot Module Replacement)
+- 🔥 Instant server start
+- 📦 Optimized builds
 
 ### Development Mode
 
@@ -93,32 +84,35 @@ yarn dev
 2. Run development mode: `yarn dev`
 3. The app will open in your browser on `http://localhost:3000`
 
+## Build for Production
+
+```bash
+yarn build
+```
+
+The optimized files will be in the `dist/` folder.
+
 ## Development Workflow
 
 ### Quick Start (Recommended)
 
-Run everything with one command:
+Run the development server with one command:
 
 ```bash
 yarn dev
 ```
 
 This will:
-
-- Compile TypeScript in watch mode (auto-recompile on changes)
-- Start the development server on port 3000
+- Start Vite development server on port 3000
+- Enable hot module replacement (instant updates)
 - Open the app in your browser
 
 ### Manual Workflow
 
-Alternatively, run commands in separate terminals:
+Build for production:
 
 ```bash
-# Terminal 1 - Watch and compile TypeScript
-yarn watch
-
-# Terminal 2 - Run the development server
-yarn start
+yarn build
 ```
 
 ## Author

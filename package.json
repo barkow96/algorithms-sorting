@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "Sorting algorithms comparison with TypeScript",
   "scripts": {
-    "build": "tsc",
+    "build": "vite build",
     "watch": "tsc --watch",
-    "start": "http-server -p 3000 -o",
-    "dev": "concurrently \"tsc --watch\" \"http-server -p 3000 -o\"",
+    "start": "vite",
+    "dev": "vite",
+    "preview": "vite preview",
     "prettier:write": "npx prettier . --write",
     "prettier:check": "npx prettier . --check"
   },
@@ -18,9 +19,8 @@
   "author": "Bartosz Kowal",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^8.2.2",
-    "http-server": "^14.1.1",
-    "prettier": "3.7.4",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "^5.0.0",
+    "prettier": "3.7.4"
   }
 }
