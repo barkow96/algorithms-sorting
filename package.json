@@ -19,8 +19,11 @@
   "author": "Bartosz Kowal",
   "license": "ISC",
   "devDependencies": {
+    "prettier": "3.7.4",
     "typescript": "^5.3.3",
-    "vite": "^5.0.0",
-    "prettier": "3.7.4"
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^25.0.6"
   }
 }

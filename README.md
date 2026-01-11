@@ -93,6 +93,10 @@ yarn build
 
 The optimized files will be in the `dist/` folder.
 
+## Deployment to GitHub Pages
+
+This project is configured to automatically deploy to GitHub Pages when you push to the `main` branch.
+
 ## Development Workflow
 
 ### Quick Start (Recommended)
